@@ -1,0 +1,132 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
+    font-size: 18px;
+    color: #2D3748;
+}
+
+.container {
+    width: 90%;
+    margin: auto;
+    display: grid;
+    grid-template-areas: 
+        "header header"
+        "sidebar main"
+        "footer footer";
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: auto 1fr auto;
+    gap: 20px;
+}
+
+.header {
+    display: flex;
+    align-items: center; /* Vertically center the items */
+    justify-content: center; /* Horizontally center the items */
+    background-color: #63B3ED; /* Set background color */
+    color: #FFFFFF; /* Set text color */
+    padding: 20px;
+    grid-area: header;
+}
+
+.profile-pic {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-right: 20px;
+    border: 2px solid #333;
+}
+
+.header-text h1 {
+    font-size: 36px; /* Updated font size */
+    font-family: Georgia, 'Times New Roman', Times, serif; /* Updated font family */
+}
+
+.header-text p {
+    font-size: 1.2em;
+    color: #FFFFFF; /* Change the paragraph text color to white */
+}
+
+.content {
+    display: flex;
+    grid-area: main;
+}
+
+main {
+    margin: 20px 0;
+}
+
+.sidebar {
+    padding: 20px;
+    background-color: #f4f4f4;
+}
+
+.sidebar h3 {
+    margin-bottom: 10px;
+    font-family: Georgia, 'Times New Roman', Times, serif; /* Updated font family for all sidebar headings */
+}
+
+.sidebar p {
+    background-color: #E2E8F0; /* Set background color for About section */
+    padding: 20px; /* Added padding for the About section */
+}
+
+.sidebar .social-media a,
+.sidebar .archives a {
+    color: #4299E1; /* Updated text color for Social Media and Archives */
+}
+
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    margin-bottom: 5px;
+}
+
+.blog-post {
+    margin-bottom: 40px;
+}
+
+.blog-post h2 {
+    font-size: 32px; /* Updated font size */
+    color: #48BB78; /* Updated color */
+}
+
+.blog-post small {
+    color: #718096; /* Updated color for date and author */
+}
+
+.blog-post p {
+    font-size: 1.1em;
+    color: #333;
+    line-height: 1.6;
+}
+
+.blog-image-left {
+    float: left;
+    margin-right: 15px;
+    width: 400px;
+    height: auto;
+}
+
+.blog-image-right {
+    float: right;
+    margin-left: 15px;
+    width: 350px;
+    height: auto;
+}
+
+footer {
+    background-color: #2C5282; /* Updated footer background color */
+    color: #FFFFFF; /* Updated footer text color */
+    text-align: center;
+    padding: 10px;
+    margin-top: 20px;
+    grid-area: footer;
+}
